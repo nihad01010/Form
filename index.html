@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="step">
+            <img src="bg-sidebar-desktop.svg" alt="" class="step-image">
+            <ol>
+                <li><span>Step 1</span><br><h4>YOUR INFO </h4></li>
+                <li><span>Step 2</span> <br><h4>SELECT PLAN</h4></li>
+                <li><span>Step 3 </span><br><h4>ADD-ONS</h4></li>
+                <li><span>Step 4</span> <br><h4>SUMMARY</h4></li>
+            </ol>
+        </div>
+        <div class="form1">
+            <h2>Personal Info</h2>
+            <p style="color: gray; font-size: 20px; margin-bottom: 20px;">Please provide your name, email address, and phone number.</p>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="e.g. Stephen King"><br>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" placeholder="e.g. stephenking@gmail.com"><br>
+            <label for="number">Phone Number</label><br>
+            <input type="number" id="number" placeholder="+994513273016"><br>
+            <button id="next1" class="nextBtn">Next Step</button>
+        </div>
+        <div class="form2">
+            <h2>Select Your Plan</h2>
+            <p>You have the option of monthly or yearly billing.</p>
+            <div class="box">
+             <div class="plan1" id="plan1">
+                <img src="icon-arcade.svg" alt="">
+                <h5>Arcade</h5>
+                <p id="arcPrice" class="price" >$9/mo</p>
+             </div>
+             <div class="plan1" id="plan2">
+                <img src="icon-advanced.svg" alt="">
+                <h5>Advanced</h5>
+                <p id="advPrice" class="price" >$12/mo</p>
+             </div>
+             <div class="plan1" id="plan3">
+                <img src="icon-pro.svg" alt="">
+                <h5>Pro</h5>
+                <p id="proPrice" class="price">$15/mo</p>
+             </div>
+            </div>
+            <div class="choice">
+                <span>Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="slideCheck">
+                    <span class="slider"></span>
+                </label>
+                <span>Yearly</span>
+            </div>
+            <div class="btn">
+                <button id="back" class="backBtn">Go Back</button>
+                <button id="next2" class="nextBtn">Next Step</button>
+
+            </div>
+            
+        </div>
+        <div class="form3">
+                <h2>Pick Add-Ons</h2>
+                <p>Add-ons help enhance your gaming experience.</p>
+                <div class="pickBox">
+                    <div class="pickBox1">
+                        <input type="checkbox" class="pickInput">
+                        <div class="text">
+                           <h5>Online Service</h5>
+                           <p>Access to multiplayer games</p>
+                        </div>
+                        <span class="pickPrice">+$1/mo</span>
+                    </div>
+                     <div class="pickBox1">
+                        <input type="checkbox" class="pickInput">
+                        <div class="text">
+                            <h5>Larger Storage</h5>
+                            <p>Extra 1TB of cloud save</p>
+                        </div>
+                        <span class="pickPrice">+$2/mo</span>
+                    </div>
+                    <div class="pickBox1">
+                        <input type="checkbox" class="pickInput">
+                        <div class="text">
+                            <h5>Customizable profile</h5>
+                            <p>Custom theme on your profile</p>
+                        </div>
+                        <span class="pickPrice">+$2/mo</span>
+                    </div>
+                    <div class="btn">
+                        <button class="backBtn" id="backBtn2">Go Back</button>
+                        <button class="nextBtn" id="nextBtn3">Next Step</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form4">
+                <h2>Finishing Up</h2>
+                <p>Double-check everything looks OK before confirming.</p>
+                <div class="priceArc">
+                    <h5 id="selectedPlanName">Arcade (Monthly)</h5>
+                    <a href="#">Change</a>
+                    <p id="price">$9/mo</p>
+                </div>
+                <p id="total">Total (Per Month)</p>
+                <p id="totalPrice">+$0/mo</p>
+                <div class="btn">
+                    <button class="backBtn" id="backBtn3">Go Back</button>
+                    <button class="nextBtn" id="nextBtn4">Next Step</button>
+                </div>
+            </div>
+        <div class="thankPage">
+            <img src="icon-thank-you.svg" alt="">
+            <h1>Thank You!</h1>
+            <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

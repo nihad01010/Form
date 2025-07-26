@@ -1,0 +1,440 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: #ebf8ff;
+}
+.container{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    margin: 150px auto;
+}
+.form1{
+    margin-left: 30%;
+    padding: 20px;
+    display: block;
+    
+}
+.form2{
+    margin-left: 30%;
+    padding: 20px;
+    display: block;
+    display: none;
+}
+.form3{
+    margin-left: 30%;
+    padding: 20px;
+    display: block;
+    display: none;
+}
+.form4{
+    margin-left: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;    
+    display: none;
+}
+ h2{
+    color: navy;
+    margin-bottom: 30px;
+}
+h5{
+    color: navy;
+}
+p{
+    color: #b2aaaa;
+}
+label{
+    color: navy;
+    font-weight: 700;
+}
+input{
+    width: 35vw;
+    outline: none;
+    height: 3vh;
+    border-radius: 5px;
+    border: 1px solid #b2aaaa;
+    margin-bottom: 1.4rem;
+    padding: 1.4rem;
+}
+input ::placeholder{
+    left: 20px;
+}
+button{
+    background-color: navy;
+    width: 130px;
+    color: white;
+    height: 30px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 53%;
+    margin-top: 30px;
+}
+.step-img{
+    margin-top: -40%;
+    width: 20%;
+    height: auto;
+    margin-left: 10px;
+}
+ol{
+    margin-top: -35%;
+    margin-left: 90px;
+}
+ol h4{
+    color: whitesmoke;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+ol li{
+    padding-bottom: 30px;
+    color: #b2aaaa;  
+    
+}
+ol li span{
+    margin-left: 20px;
+}
+.step{
+    display: block;
+    margin: -10px auto;
+}
+.box{
+    display: flex;
+    gap: 30px;
+}
+.plan1{
+    border: 2px solid #111;
+    width: 18vh;
+    height: 8vw;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.plan1 img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: -5px;
+    padding-bottom: 10px;
+}
+.choice{
+    display: flex;
+    max-width: 400px;
+    gap: 30px;
+    background-color: #ebf8ff;
+    justify-content: center;
+    margin-top: 30px;
+    height: 50px;
+    align-items: center;
+    border-radius: 5px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+.switch input {
+  opacity: 0;
+  width: 10vw;
+  height: 0;
+  background-color: #0a2b5a;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #0a2b5a; /* Koyu mavi*/
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .4s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #1b6bd6;
+  transition: .4s;
+  border-radius: 50%;
+  border: 2px solid #1b6bd6;
+}
+
+/* Açık konumda */
+input:checked + .slider {
+  background-color: #1b6bd6;
+}
+
+input:checked + .slider::before {
+  transform: translateX(22px);
+  background-color: #0a2b5a;
+}
+span{
+    color: navy;
+}
+.backBtn{
+    background-color: white;
+    color: #b2aaaa;
+    margin-left: -5%;
+}
+.pickBox{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.pickBox1{
+    display: flex;
+    border: 1px solid #111;
+    border-radius: 5px;
+    width: 80%;
+    height: 8vh;
+    padding-left: -30%;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px; 
+    font-size: 15px;
+}
+.pickBox1 input{
+    width: 30px;
+    height: 20px;
+    margin-left: -100px;
+    
+} 
+.priceArc{
+    background-color:#ebf8ff;
+    width: 80%;
+    height: 12vh;
+    border-radius: 8px;
+    padding: 20px;
+}
+.priceArc h5{
+    font-weight: 600;
+}
+.priceArc a{
+    color: rgb(182, 180, 180);
+}
+#price{
+    margin-left: 90%;
+    margin-top: -20px;
+}
+#totalPrice{
+    margin-left: 70%;
+    margin-top: -8%;
+}
+.thankPage{
+    display: block;
+    margin-left: 20%;
+    padding: 120px;
+    text-align: center;
+    display: none;
+}
+.thankPage img{
+    width: 80px;
+    margin-right: 30px;
+}
+.thankPage p{
+    margin-top: 60px;
+    max-width: 500px;
+    margin-left: 80px;
+}
+.thankPage h1{
+    margin-top: 20px;
+    color:#0a2b5a;
+}
+.plan1.selected{
+    background-color: #ebf8ff;
+}
+.plan1:hover{
+    border: 1px solid #1b6bd6;
+}
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    height: auto;
+    max-width: 1000px;
+  }
+
+  .step {
+    flex: 1;
+    max-width: 250px;
+    
+  }
+
+  .form1, .form2, .form3, .form4 {
+    flex: 2;
+    margin-left: 30px;
+    padding: 20px 40px;
+  }
+
+  .step-img {
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  ol {
+    margin-top: -150%;
+    margin-left: 40px;
+  }
+      .thankPage {
+        max-width: 90%;
+        margin: 100px auto;
+        padding: 40px 20px;
+    }
+
+    .thankPage img {
+        width: 60px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .thankPage h1 {
+        font-size: 24px;
+    }
+
+    .thankPage p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+} 
+
+/* Tablet cihazlar üçün (768px və aşağısı)*/
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: auto;
+    margin: 100px auto;
+    padding: 20px;
+  }
+
+  .form1, .form2, .form3, .form4 {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  input {
+    width: 100%;
+    height: auto;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan1 {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .plan1 img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .choice {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+  }
+
+  button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  #totalPrice {
+    margin-left: auto;
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  .priceArc {
+    height: auto;
+    padding: 15px;
+  }
+
+  .pickBox1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .pickBox1 input {
+    margin-left: 0;
+  }
+
+  ol, img {
+    display: none;
+  }
+
+  .thankPage {
+    padding: 40px 10px;
+    margin-left: 0;
+  }
+
+  .thankPage p {
+    margin-left: 0;
+  }
+}
+
+/* Mobil cihazlar üçün (480px və aşağısı) */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  h5, p, label, span {
+    font-size: 14px;
+  }
+
+  .switch {
+    width: 40px;
+    height: 20px;
+  }
+
+  .slider::before {
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+  }
+
+  input:checked + .slider::before {
+    transform: translateX(18px);
+  }
+}
